@@ -1,0 +1,198 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Apr 20, 2024, 9:09:07 AM
+    Author     : Sree Isu
+*/
+body,h2
+{
+    margin:0;
+    font-family: Arial,Helvatica,sans-serif;
+    
+}
+.landing{
+    background-image: url('./images/background.jpg');
+    background-size:cover;
+    background-position: center;
+    height:100vh;
+    color: white;
+}
+header a{
+    text-decoration: none;
+    color:yellow;
+    min-width: 120px;
+}
+header
+{
+  display: flex;  /*same line */
+  flex-wrap:wrap;
+  row-gap:1em;
+  padding: 1em;
+}
+
+#logo{
+   flex:3; /*to display the logo in 3 ratio and others two in 2 ratio 3:2 ratio*/
+   font-size:1.25em;/*1.25 times the size of parent elements's font size'*/
+   min-width: 260px;
+}
+nav{
+    flex:2;/*other two are 2 ratio*/
+    display:flex;
+    align-items:center;
+}
+nav a{
+    flex:1 /*menu and location are 1:1 ratio*/
+}
+nav a:hover/*To change the color when hover over the link*/
+{
+    color: green;
+}
+header h2 i,nav a i{
+    margin-right: .5em;
+}
+.maintext{
+    display: flex;
+    flex-direction: column;
+    height:50vh;
+    justify-content: center;
+    padding:2em;
+}
+.tagline1{
+    color: white;
+    font-size:2.5em;
+    font-weight:bolder;
+}
+.tagline2{
+    color: white;
+}
+.maintext div{
+    margin-top:.75em;
+}
+.maintext button
+{
+    width: 20vw;
+    margin-top: 2em;
+    border-radius: 10px;
+    padding:.7em;
+    background-color: green;
+    color:white;
+    border:ipx solid green;
+}
+
+.menu{
+    display:grid;
+    grid-template-columns: repeat(auto-fit,minmax(320px,1fr));/*position the elements in menu based on page size display*/
+    background:linear-gradient(to right,rgb(100, 100, 100),rgb(53, 52, 52));
+    color:white;
+}
+#menuheading,#locheading{
+    background:linear-gradient(to right,rgb(100, 100, 100),rgb(53, 52, 52));
+    font-size:2.5em;
+    color:red;
+    display: flex;
+    justify-content: center;
+}
+.menu th{
+    color:#00cccc;
+    font-size: 1.8em;
+}
+table {
+    width:100%;
+    padding: 1em;
+}
+.menu tr{
+    display: flex;
+    justify-content: center;
+    margin-top:.8em;
+}
+.menu td:nth-child(1){
+    flex:1;
+    justify-self: left; 
+}
+.menu td:nth-child(2){
+    flex:1;
+    justify-self: right; 
+}
+.maincourse{
+    grid-row:span 2;
+}
+.locations{
+    background:linear-gradient(to right,rgb(100, 100, 100),rgb(53, 52, 52));
+    color:white;
+    display:flex;
+    flex-wrap: wrap;
+}
+.locations h2{
+    color:#00ACEE;
+    margin-bottom: .8em;
+}
+.locations div{
+    flex:1;
+    padding:1em; 
+    min-width: 220px;
+}
+footer{
+    background-color: rgb(55, 55, 55);
+    color:white;
+    padding:.25em 1em;
+}
+
+#copyright{
+    margin-left:20px;
+}
+.social-menu ul{
+    display: flex;
+    padding:0;
+}
+
+.social-menu ul li{
+    list-style: none;
+    display:inline-block;
+    margin: 0 15px;
+}
+
+.social-menu ul li .fab{
+    font-size: 25px;
+    line-height: 40px;
+    transition: .3s;
+    color: #000;
+}
+
+.social-menu ul li .fab:hover{
+    color: #fff;
+}
+
+.social-menu ul li a{
+    position: relative;
+    display: block;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #fff;
+    text-align: center;
+    transition: .6s;
+    box-shadow: 0 5px 4px rgba(0,0,0,.5);
+}
+    
+.social-menu ul li a:hover{
+    transform: translate(0, -10%);
+}
+
+.social-menu ul li:nth-child(1) a:hover{
+    background-color: #4267B2;
+}
+.social-menu ul li:nth-child(2) a:hover{
+    background-color: #E4405F;
+}
+.social-menu ul li:nth-child(3) a:hover{
+    background-color: #00ACEE;
+}
+.callus{
+    font-weight:bolder;
+}
+.callus span{
+    color: black;
+}
